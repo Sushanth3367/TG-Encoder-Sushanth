@@ -63,13 +63,13 @@ async def anitopy_renamer(query):
     #title_ = title.replace("AnimeKayo", "")
   if episode == "Episode":
     final = "{}.mkv".format(title)
-   #final = f"{len(rename_queue)} - {title} [480p] [Sub] @AniVoid.mkv"
+   #final = f"{len(rename_queue)} - {title} [480p] [Sub] @SushanthMachineni.mkv"
   else:
     if len(audio_) == 0:
       if len(quality_) == 0:
         final = "{} - {}.mkv".format(episode, title)
     else:
-      final = f"{episode} - {title} [{quality_[0]}] [{audio_[0]}] @AniVoid.mkv"
+      final = f"{episode} - {title} [{quality_[0]}] [{audio_[0]}] @SushanthMachineni.mkv"
       #final = final_.replace("Cleo", "")
     
   path = "downloads/"
@@ -130,7 +130,7 @@ async def rename_pro(bot, message):
       chat_id=message.chat.id,
       document=new_file_name,
       force_document=True,
-      #caption="©️ @Animes_Encoded",
+      #caption="©️ @SushanthMachineni",
       reply_to_message_id=message.message_id,
       progress=progress_for_pyrogram,
       progress_args=(bot, "UPLOADING", sent_message, c_time)
