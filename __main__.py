@@ -122,7 +122,7 @@ if __name__ == "__main__":
       chat_id=message.chat.id,
       document=path,
       force_document=True,
-      #caption="©️ @Animes_Encoded",
+      #caption="©️ @SushanthMachineni",
       reply_to_message_id=message.message_id,
       progress=progress_for_pyrogram,
       progress_args=(bot, "UPLOADING", boa, c_time)
@@ -169,7 +169,7 @@ if __name__ == "__main__":
       reply_markup=InlineKeyboardMarkup(
         [
           [
-            InlineKeyboardButton("📕Channel", url="https://t.me/AniVoid")
+            InlineKeyboardButton("📕Channel", url="https://t.me/SushanthMachineni")
           ],
         ],
       ),
